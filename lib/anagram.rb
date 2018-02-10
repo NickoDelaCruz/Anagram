@@ -51,6 +51,11 @@ class Anagram
       return false
     end
   end
+  def spec_char(word_one, word_two)
+      if (word_one =~ /[!@$^*&]/ && word_two =~ /[!@$^*&]/)
+          return false
+      end
+  end
 
 
 
