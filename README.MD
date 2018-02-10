@@ -13,10 +13,10 @@ terminal
 atom
 
 ### Installing
-Open terminal
-$ git clone https://github.com/NickoDelaCruz/Anagram.git
-CD Anagram
-$ rspec
+1. Open terminal
+2. $ git clone https://github.com/NickoDelaCruz/Anagram.git
+3. CD Anagram
+4. $ rspec
 
 ### Bugs and Tests
 N/A
