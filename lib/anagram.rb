@@ -24,4 +24,7 @@ class Anagram
       return true
     end
   end
+  def lowercase(word_one, word_two)
+    word_one = "".downcase
+    word_two = "".downcase
 end
