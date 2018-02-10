@@ -11,4 +11,7 @@ describe('#anagram') do
  it("Check if the second word is a palindrome") do
    expect(Anagram.new("bang","abba").palindrome2("bang","abba")).to(eq("Your second word is a palindrome"))
  end
+ it("Return true if two words have the same values no matter what case") do
+   expect(Anagram.new("scaR","carS").lowercase("scar","cars")).to(eq(true))
+ end
 end
