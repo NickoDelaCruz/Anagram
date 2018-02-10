@@ -18,6 +18,6 @@ describe('#anagram') do
    expect(Anagram.new("hello","goodbye").antigram_checker("hello","goodbye")).to(eq(false))
  end
  it("Return true if two words have the same values") do
-   expect(Anagram.new("test","test").anagram_checker("test","test")).to(eq(true))
+   expect(Anagram.new("cars","scar").anagram_checker("cars","scar")).to(eq(true))
  end
 end
