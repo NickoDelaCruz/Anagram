@@ -33,4 +33,16 @@ class Anagram
       return true
     end
   end
+  def antigram_checker(word_one, word_two)
+    word_one = "test1"
+    word_two = "test2"
+    anagram_word1=sorter(word_one)
+    anagram_word2=sorter(word_two)
+    if anagram_word1 != anagram_word2
+      return false
+    end
+  end
+
+
+
 end
