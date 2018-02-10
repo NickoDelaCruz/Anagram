@@ -32,5 +32,5 @@ class Anagram
     if anagram_word1 == anagram_word2
       return true
     end
-end
+  end
 end

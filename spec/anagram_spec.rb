@@ -14,4 +14,7 @@ describe('#anagram') do
  it("Return true if two words have the same values no matter what case") do
    expect(Anagram.new("scaR","carS").lowercase("scar","cars")).to(eq(true))
  end
+ it("Return false if two words don't have the same values") do
+   expect(Anagram.new("hello","goodbye").antigram_checker("hello","goodbye")).to(eq(false))
+ end
 end
