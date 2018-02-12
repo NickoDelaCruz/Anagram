@@ -24,6 +24,7 @@ class Anagram
       return true
     end
   end
+
   def anagram_checker(word_one, word_two)
     word_one = " "
     word_two = " "
@@ -33,6 +34,7 @@ class Anagram
       return true
     end
   end
+
   def lowercase(word_one, word_two)
     word_one = "".downcase
     word_two = "".downcase
@@ -42,6 +44,7 @@ class Anagram
       return true
     end
   end
+
   def antigram_checker(word_one, word_two)
     word_one = "test1"
     word_two = "test2"
@@ -51,12 +54,9 @@ class Anagram
       return false
     end
   end
-  def spec_char(word_one, word_two)
-      if (word_one =~ /[!@$^*&]/ && word_two =~ /[!@$^*&]/)
-          return false
-      end
-  end
-
-
-
 end
+  # def spec_char(word_one, word_two)
+  #     if (word_one =~ /[!@$^*&]/ && word_two =~ /[!@$^*&]/)
+  #         return false
+  #     end
+  # end
