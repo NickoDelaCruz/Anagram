@@ -9,13 +9,13 @@ class Anagram
   end
   def palindrome(word_one, word_two)
    if word_one.reverse == word_one
-     return "Your first word is a palindrome"
+     return "word one is a palindrome"
    end
  end
 
  def palindrome2(word_one, word_two)
    if word_two.reverse == word_two
-     return "Your second word is a palindrome"
+     return "word two is a palindrome"
    end
  end
 
