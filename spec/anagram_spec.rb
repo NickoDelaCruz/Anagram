@@ -13,15 +13,19 @@ describe("palindrome")
  it("Check if the second word is a palindrome") do
    expect(Anagram.new("noon","noon").palindrome2("noon","noon")).to(eq("word two is a palindrome"))
  end
+ describe("lowercase_checker")
  it("Return true if two words have the same values no matter what case") do
-   expect(Anagram.new("scaR","carS").lowercase("scar","cars")).to(eq(true))
+   expect(Anagram.new("scaR","carS").lowercase_checker("scar","cars")).to(eq(true))
  end
+ describe("antigram_checker")
  it("Return false if two words don't have the same values") do
    expect(Anagram.new("hello","goodbye").antigram_checker("hello","goodbye")).to(eq(false))
  end
+ describe('anagram_checker')
  it("Return true if two words have the same values") do
    expect(Anagram.new("cars","scar").anagram_checker("cars","scar")).to(eq(true))
  end
+
  # it("Checks for special characters") do
  #    expect(Anagram.new("ch@t").spec_char("chat")).to(eq(false))
  #    end

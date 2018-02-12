@@ -35,7 +35,7 @@ class Anagram
     end
   end
 
-  def lowercase(word_one, word_two)
+  def lowercase_checker(word_one, word_two)
     word_one = "".downcase
     word_two = "".downcase
     anagram_word1=sorter(word_two)
