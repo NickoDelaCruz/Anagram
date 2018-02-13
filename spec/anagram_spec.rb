@@ -1,8 +1,8 @@
 require("rspec")
 require("anagram")
 
-# describe('anagram') do
-#   it("Checks string for english words") do
+# describe('english_check') do
+#   it("Checks string for english words by searching for words that start with a vowel") do
 #     expect(Anagram.new("english","word").english_check("english","word")).to(eq(true))
 #   end
 # describe("palindrome")

@@ -10,7 +10,7 @@ class Anagram
  end
 
   def english_check(word_one, word_two)
-    if (word_one && word_two =~ /[aeiou^a-zA-Z0-9\-]/)
+    if (word_one && word_two =~ /[aeiou]/)
       return true
     end
   end
