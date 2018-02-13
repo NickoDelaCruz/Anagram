@@ -4,8 +4,9 @@ class Anagram
     @word_two = word_two
   end
 
+
   def english_check(word_one, word_two)
-    if (word_one && word_two =~ /[aeiou]/)
+    if (word_one && word_two =~ /[aeiou^a-zA-Z0-9\-]/)
       return true
     end
   end
@@ -29,7 +30,7 @@ class Anagram
   end
 
   def sort_characters(char)
-#add " "
+
     characters=char.split()
 
     characters_sort=characters.sort
