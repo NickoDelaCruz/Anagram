@@ -7,11 +7,7 @@ describe('#anagram') do
   end
 describe("palindrome")
   it("Check if the first word is a palindrome") do
-   expect(Anagram.new("noon","noon").palindrome("noon","noon")).to(eq("word one is a palindrome"))
- end
- describe("palindrome2")
- it("Check if the second word is a palindrome") do
-   expect(Anagram.new("noon","noon").palindrome2("noon","noon")).to(eq("word two is a palindrome"))
+   expect(Anagram.new("noon","noon").palindrome("noon","noon")).to(eq("word one is a palindrome" || "word two is a palindrom"))
  end
  describe("lowercase_checker")
  it("Return true if two words have the same values no matter what case") do

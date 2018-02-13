@@ -3,27 +3,20 @@ class Anagram
     @word_one = word_one
     @word_two = word_two
   end
-  def sort_characters(input)
-    characters=input.split("")
-    characters_sort=characters.sort
-  end
-  def palindrome(word_one, word_two)
-   if word_one.reverse == word_one
-     return "word one is a palindrome"
-   end
- end
-
- def palindrome2(word_one, word_two)
-   if word_two.reverse == word_two
-     return "word two is a palindrome"
-   end
- end
 
   def english_check(word_one, word_two)
-    if word_one && word_two =~ /[aeiou]/
+    if (word_one && word_two =~ /[aeiou]/)
       return true
     end
   end
+
+  def palindrome(word_one, word_two)
+   if (word_one.reverse == word_one)
+     return "word one is a palindrome"
+   elsif (word_two.reverse == word_two)
+     return "word two is a palindrome"
+   end
+ end
 
   def anagram_checker(word_one, word_two)
     word_one = " "
@@ -33,6 +26,13 @@ class Anagram
     if anagram_word1 == anagram_word2
       return true
     end
+  end
+
+  def sort_characters(char)
+#add " "
+    characters=char.split()
+
+    characters_sort=characters.sort
   end
 
   def lowercase_checker(word_one, word_two)
