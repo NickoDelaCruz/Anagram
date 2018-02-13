@@ -4,6 +4,12 @@ class Anagram
     @word_two = word_two
   end
 
+  def sort_characters(char)
+
+    characters=char.split()
+
+    characters_sort=characters.sort
+  end
 
   def english_check(word_one, word_two)
     if (word_one && word_two =~ /[aeiou^a-zA-Z0-9\-]/)
@@ -29,12 +35,7 @@ class Anagram
     end
   end
 
-  def sort_characters(char)
 
-    characters=char.split()
-
-    characters_sort=characters.sort
-  end
 
   def lowercase_checker(word_one, word_two)
     word_one = "".downcase
@@ -56,8 +57,3 @@ class Anagram
     end
   end
 end
-  # def spec_char(word_one, word_two)
-  #     if (word_one =~ /[!@$^*&]/ && word_two =~ /[!@$^*&]/)
-  #         return false
-  #     end
-  # end
