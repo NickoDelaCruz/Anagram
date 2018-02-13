@@ -24,8 +24,8 @@ class Anagram
  end
 
   def anagram_checker(word_one, word_two)
-    word_one = " "
-    word_two = " "
+    @word_one = " "
+    @word_two = " "
     anagram_word1=sort_characters(word_one)
     anagram_word2=sort_characters(word_two)
     if anagram_word1 == anagram_word2
@@ -36,8 +36,8 @@ class Anagram
 
 
   def lowercase_checker(word_one, word_two)
-    word_one = "".downcase
-    word_two = "".downcase
+    @word_one = "".downcase
+    @word_two = "".downcase
     anagram_word1=sort_characters(word_two)
     anagram_word2=sort_characters(word_one)
     if anagram_word1 == anagram_word2
@@ -46,8 +46,8 @@ class Anagram
   end
 
   def antigram_checker(word_one, word_two)
-    word_one = "test1"
-    word_two = "test2"
+    @word_one = "test1"
+    @word_two = "test2"
     anagram_word1=sort_characters(word_one)
     anagram_word2=sort_characters(word_two)
     if anagram_word1 != anagram_word2
