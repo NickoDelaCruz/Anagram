@@ -25,8 +25,8 @@ class Anagram
 
 
   def checker(word_one, word_two)
-    word_one = "".downcase
-    word_two = "".downcase
+    @word_one = "".downcase
+    @word_two = "".downcase
     anagram_word1=sort_characters(word_two)
     anagram_word2=sort_characters(word_one)
     if anagram_word1 == anagram_word2
