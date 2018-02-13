@@ -9,16 +9,16 @@ class Anagram
     characters_sort=characters.sort
  end
 
-  def english_check(word_one, word_two)
-    if (word_one && word_two =~ /[aeiou]/)
+  def english_check()
+    if (@word_one && @word_two =~ /[aeiou]/)
       return true
     end
   end
 
-  def palindrome(word_one, word_two)
-   if (word_one.reverse == word_one)
+  def palindrome()
+   if (@word_one.reverse == word_one)
      return "word one is a palindrome"
-   elsif (word_two.reverse == word_two)
+   elsif (@word_two.reverse == word_two)
      return "word two is a palindrome"
    end
  end
