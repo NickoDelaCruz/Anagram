@@ -25,6 +25,10 @@ describe("palindrome")
  it("Return true if two words have the same values") do
    expect(Anagram.new("cars","scar").anagram_checker("cars","scar")).to(eq(true))
  end
+# describe("sort_characters")
+# it("sorts all characters that are split to check if they are anagrams") do
+#   expect(Anagram.new)("abc").sort_characters("a","b","c").to(eq(true))
+# end
  # it("Checks for special characters") do
  #    expect(Anagram.new("ch@t").spec_char("chat")).to(eq(false))
  #    end
